@@ -1,8 +1,11 @@
 
 
 /**
- * [exports description]
- * @return {[type]} [description]
+ * Expose 'molder'
+ *
+ * @param {Element} component
+ * @param {Element} el
+ * @api public
  */
 
 module.exports = function(component, el) {

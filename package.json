@@ -1,0 +1,24 @@
+{
+  "name": "molder",
+  "version": "1.0.0",
+  "description": "web components molder",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify test/*.js | tape-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bredele/molder.git"
+  },
+  "keywords": [
+    "components",
+    "polymer",
+    "shadow"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/molder/issues"
+  },
+  "homepage": "https://github.com/bredele/molder"
+}

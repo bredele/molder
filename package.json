@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/bredele/molder/issues"
   },
-  "homepage": "https://github.com/bredele/molder"
+  "homepage": "https://github.com/bredele/molder",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "tape": "^4.6.0",
+    "tape-run": "^2.1.4"
+  }
 }

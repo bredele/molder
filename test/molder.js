@@ -37,7 +37,7 @@ tape('subsitute content using queries', test => {
   component.innerHTML = 'my name is <content select="#world" />'
 
   molder(parent.firstChild, component)
-  test.equal(parent.firstChild.outerHTML, '<button>my name is Olivier</button>')
+  test.equal(parent.firstChild.outerHTML, '<button>my name is <span id="world">Olivier</span></button>')
 })
 
 

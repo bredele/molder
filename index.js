@@ -3,6 +3,8 @@
 /**
  * Expose 'molder'
  *
+ * Subsitute elements with custom elements syntax.
+ *
  * @param {Element} component
  * @param {Element} el
  * @api public

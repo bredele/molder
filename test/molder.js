@@ -9,7 +9,7 @@ tape('replace element with other element', test => {
 
 	var component = document.createElement('button')
 
-	molder(component, parent.firstChild)
+	molder(parent.firstChild, component)
 	test.equal(parent.firstChild.outerHTML, '<button></button>')
 })
 
@@ -22,7 +22,7 @@ tape('subsitute content', test => {
 	var component = document.createElement('button')
 	component.innerHTML = '<content />'
 
-	molder(component, parent.firstChild)
+	molder(parent.firstChild, component)
 	test.equal(parent.firstChild.outerHTML, '<button>Hello world</button>')
 })
 
@@ -36,6 +36,6 @@ tape('subsitute content using queries', test => {
   var component = document.createElement('button')
   component.innerHTML = 'my name is <content select="#world" />'
 
-  molder(component, parent.firstChild)
+  molder(parent.firstChild, component)
   test.equal(parent.firstChild.outerHTML, '<button>my name is <span id="world">Olivier</span></button>')
 })

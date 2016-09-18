@@ -4,12 +4,12 @@
  *
  * Subsitute elements with custom elements syntax.
  *
+ * @param {Element} el (element to transform)
  * @param {Element} component
- * @param {Element} el
  * @api public
  */
 
-module.exports = function(component, el) {
+module.exports = function(el, component) {
 	component.parentNode.replaceChild(el, component)
 	var contents = el.querySelectorAll('content')
 	for(var i = 0, l = contents.length; i < l; i++) {
